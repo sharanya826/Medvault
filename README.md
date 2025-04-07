@@ -107,15 +107,6 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 
 
-## 📬 Contact
-
-For any queries, suggestions related to MedVault, feel free to reach out to any of the team members below:
-
-- 👩‍💻 Sharanya – sharanyass826@gmail.com  
-- 👩‍💻 varsha – reddyvarsha0131@gmail.com  
-- 👩‍💻 Yuktha – yukthama2005@gmail.com  
-
-We’re happy to help and open to collaboration!
 
 
     
