@@ -1,16 +1,15 @@
 const mysql = require("mysql2/promise");
-const fs = require("fs/promises"); // Use fs.promises to avoid callback errors
+const fs = require("fs/promises"); 
 
 const pool = mysql.createPool({
   host: "localhost",
   user: "root",
-  password: "sharu@123sql",
+  password: "your-password",
   database: "medvault",
 });
 
 async function loadMedicines() {
   try {
-    // ✅ Read medicines.json correctly
     const data = await fs.readFile("../data/medicines.json", "utf-8");
     const medicines = JSON.parse(data);
 
