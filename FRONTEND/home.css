@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #f7f9fc); /* Softer white gradient */
+    color: #2c3e50; /* Rich dark gray for text */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Fade-in Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Top Bar */
+.top-bar {
+    background: linear-gradient(to right, #34495e, #2c3e50); /* Gradient navy */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #1abc9c; /* Teal accent line */
+}
+
+.top-bar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.top-bar a:hover {
+    color: #1abc9c;
+    transform: scale(1.1);
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #2c3e50;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    animation: slideIn 1s ease-in-out;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: #1abc9c;
+    color: #ffffff;
+    transform: translateY(-3px);
+    border-radius: 8px;
+}
+
+/* Slide-in Keyframes */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Search Section */
+.search-section {
+    background: #ffffff;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.search-box input {
+    width: 65%;
+    padding: 14px;
+    border: 1px solid #d1d8e0;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f4f7fc;
+    color: #34495e;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #1abc9c, #16a085); /* Teal gradient */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search-box button:hover {
+    background: linear-gradient(to right, #16a085, #1abc9c);
+    transform: scale(1.1);
+}
+
+/* Trending Medicines */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    margin: 20px auto;
+    background: #f4f7fc;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+    scroll-snap-align: center;
+    flex: 0 0 240px;
+    background: linear-gradient(to bottom, #ecf0f1, #bdc3c7); /* Light gray gradient */
+    color: #34495e;
+    border: 1px solid #d1d8e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Categories Section */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-btn {
+    background: linear-gradient(to right, #3498db, #2980b9); /* Blue gradient */
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-btn:hover {
+    background: linear-gradient(to right, #2980b9, #3498db); /* Reverse gradient */
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Default Carousel Item Style with Gradient */
+.carousel-item {
+    scroll-snap-align: center;
+    flex: 0 0 240px;
+    background: linear-gradient(to right, #3498db, #2980b9); /* Blue gradient */
+    color: #ffffff; /* White text for better contrast */
+    border: 1px solid #2980b9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect with Gradient */
+.carousel-item:hover {
+    background: linear-gradient(to right, #1abc9c, #16a085); /* Teal gradient */
+    color: #ffffff; /* Keep text white */
+    transform: scale(1.05); /* Slight scaling effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Active Style for Clicked Items */
+.carousel-item.active {
+    background: linear-gradient(to right, #e74c3c, #c0392b); /* Red gradient for active */
+    color: #ffffff; /* Keep text white */
+    border: 1px solid #e74c3c;
+}
+
+
+/* Default Style for Category Buttons */
+.category-btn {
+    background: linear-gradient(to right, #9b59b6, #8e44ad); /* Purple gradient */
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect with Gradient */
+.category-btn:hover {
+    background: linear-gradient(to right, #e74c3c, #c0392b); /* Red gradient on hover */
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Active Style for Clicked Buttons */
+.category-btn.active {
+    background: linear-gradient(to right, #2ecc71, #27ae60); /* Green gradient for active */
+    color: #ffffff;
+    border: 1px solid #27ae60; /* Green border for active state */
+    transform: scale(1.05); /* Keep slightly enlarged */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow */
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, #34495e, #2c3e50);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 2px solid #1abc9c;
+}
