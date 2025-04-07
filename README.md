@@ -39,7 +39,9 @@ No complex jargon — just clean, structured information everyone can understand
 - Database:MySQL
 - Tools: VS Code
 
-
+🚀 About the Event
+This project was built as part of Project of the Month organized by the IEEE Computer Society, BMSIT&M – a beginner-friendly initiative designed to help students turn their ideas into reality! 🎯
+MedVault is a beginner-level project built through this initiative. While simple, it reflects our first step into the world of tech-based healthcare solutions—and we're excited to keep learning and building from here! 🚀
 
 ## 📥 Installation
 
